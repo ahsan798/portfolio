@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <style>
+        /* Reset default styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Helvetica", sans-serif;
+            line-height: 1.6;
+            background-color: #111;
+            color: #fff;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem;
+        }
+
+        nav ul {
+            list-style: none;
+        }
+
+        nav li {
+            display: inline;
+            margin-right: 1rem;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 1.1rem;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #66c0f4;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .profile-image img {
+            display: block;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            margin: 0 auto;
+            border: 5px solid #66c0f4;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+            color: #fff;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            color: #66c0f4;
+            text-align: center;
+        }
+
+        p {
+            margin-bottom: 1.5rem;
+        }
+
+        .project {
+            margin-bottom: 2rem;
+            border-radius: 8px;
+            background-color: #222;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+            padding: 1.5rem;
+        }
+
+        .project h3 {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+            color: #66c0f4;
+        }
+
+        .project p {
+            color: #ccc;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 0.75rem 1.5rem;
+            background-color: #66c0f4;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #2188d6;
+        }
+
+        .dark {
+            background-color: #111;
+        }
+
+        /* New styling for the skills section */
+        #skills {
+            background-color: #333;
+            color: #fff;
+            padding: 2rem 0;
+        }
+
+        .skills-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .skill {
+            background-color: #444;
+            padding: 1rem;
+            border-radius: 4px;
+            text-align: center;
+        }
+
+        .skill-title {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+            color: #66c0f4;
+        }
+
+        /* Responsive styles */
+        @media (max-width: 600px) {
+            .profile-image img {
+                width: 150px;
+                height: 150px;
+            }
+
+            h1 {
+                font-size: 2.5rem;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            .skills-container {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .contact-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        /* .contact-list li {
+        margin-bottom: 1rem;
+      } */
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="about">
+        <div class="container">
+            <div class="profile-image">
+                <!-- <img src="profile.jpg" alt="Ahsan" /> -->
+            </div>
+            <div class="bio">
+                <h1>Muhammad Ahsan Shahzad</h1>
+                <h2>Frontend React JS Developer</h2>
+                <p>
+                    Hi there! I'm Muhammad Ahsan, a seasoned Frontend Developer with 4
+                    years of experience in developing web and mobile applications using
+                    React. Additionally, I have 2 years of experience with Node.js. My
+                    commitment lies in crafting high-quality, scalable solutions that
+                    effectively tackle real-world challenges.
+                </p>
+                <p>
+                    In addition to my technical skills, I have extensive experience
+                    working with CMS platforms such as WordPress, Shopify, Woocommerce,
+                    and Bigcommerce. Whether you need to optimize your website for
+                    e-commerce or enhance its functionality, I have the skills and
+                    knowledge to help you achieve your goals.
+                </p>
+                <p>
+                    Throughout my career, I have developed applications for various
+                    domains, including healthcare, education, finance, and e-commerce.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section id="projects" class="dark">
+        <div class="container">
+            <h2>Projects</h2>
+            <p>
+                I am proud to showcase some of the live websites I have contributed
+                to. I am equipped to discuss the nuances of the code and user
+                interface, as well as the end-to-end development process, teamwork,
+                dedication, and the obstacles we overcame in these projects.
+            </p>
+
+            <div class="project">
+                <h3>Project 1</h3>
+                <p>
+                    I had the opportunity to work for a Canadian-based firm with a
+                    portfolio of 40 websites. Within this full time role, I managed 15
+                    websites on WordPress/WooCommerce simultaneously for over one year.
+                    My responsibilities included website maintenance, on-page SEO,
+                    off-page SEO, speed optimization, updates, bug fixes, and various
+                    other tasks.
+                </p>
+                <h3>Stacks: WordPress/Woocommerce</h3>
+                <a href="https://mindmixbc.com/" target="_blank" class="btn">View Project</a>
+            </div>
+
+            <div class="project">
+                <h3>Project 2</h3>
+                <p>
+                    I developed a car sales website for a Canadian client that is built
+                    with the latest technologies to ensure seamless functionality. Using
+                    WordPress and PHP, I created a highly customizable and user-friendly
+                    interface that enables easy navigation and browsing. The website's
+                    integration with Shopify allows for secure online transactions,
+                    providing customers with the highest level of satisfaction. I
+                    utilized modern coding practices and frameworks to ensure the
+                    platform's reliability and security.
+                </p>
+                <h3>Stacks: WordPress/PHP/Shopify</h3>
+                <a href="https://www.mbrp.com/" target="_blank" class="btn">View Project</a>
+            </div>
+            <div class="project">
+                <h3>Project 3</h3>
+                <p>
+                    I take immense pride in single-handedly developing and overseeing
+                    the entire project from scratch over the course of a year. As the
+                    team grew under my guidance, we collectively refined and improved
+                    every aspect of the product. This experience served as a powerful
+                    reminder of the value of dedication, teamwork, and unwavering
+                    commitment to excellence in achieving a successful outcome.
+                </p>
+                <h3>Stacks: React/Node</h3>
+                <a href="https://epik.granitenet.com/" target="_blank" class="btn">View Project</a>
+            </div>
+
+            <div class="project">
+                <h3>Project 4</h3>
+                <p>
+                    I solely developed this MERN stack application with my team. It's a
+                    scalable and efficient platform built using MongoDB, Express.js,
+                    React.js, and Node.js. With user authentication, real-time updates,
+                    and dynamic UI rendering, the application offers a comprehensive and
+                    user-friendly solution to modern application development. The
+                    application is reliable, secure, and highly customizable.
+                </p>
+                <h3>Stacks: React/Node</h3>
+                <a href="https://www.telus.com/" target="_blank" class="btn">View Project</a>
+            </div>
+        </div>
+    </section>
+    <section id="skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="skills-container">
+                <div class="skill">
+                    <h3 class="skill-title">JavaScript</h3>
+                </div>
+                <div class="skill">
+                    <h3 class="skill-title">React.js</h3>
+                </div>
+                <div class="skill">
+                    <h3 class="skill-title">Node.js</h3>
+                </div>
+                <div class="skill">
+                    <h3 class="skill-title">Redux</h3>
+                </div>
+                <div class="skill">
+                    <h3 class="skill-title">React Native</h3>
+                </div>
+                <div class="skill">
+                    <h3 class="skill-title">Frontend Development</h3>
+                </div>
+                <div class="skill">
+                    <h3 class="skill-title">Web Design</h3>
+                </div>
+                <div class="skill">
+                    <h3 class="skill-title">Problem Solving</h3>
+                </div>
+                <div class="skill">
+                    <h3 class="skill-title">Version Control (Git)</h3>
+                </div>
+                <div class="skill">
+                    <h3 class="skill-title">Shopify</h3>
+                </div>
+                <div class="skill">
+                    <h3 class="skill-title">WordPress</h3>
+                </div>
+                <div class="skill">
+                    <h3 class="skill-title">PHP</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="container">
+            <h2>Contact</h2>
+            <ul class="contact-list">
+                <li>
+                    Email:
+                    <a href="mailto:itsmeahsan98@gmail.com" style="color: white;">itsmeahsan98@gmail.com</a>
+                </li>
+                <li>
+                    Address: Islamabad, Pakistan
+                </li>
+            </ul>
+        </div>
+    </section>
+</body>
+
+</html>
